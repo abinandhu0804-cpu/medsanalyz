@@ -69,7 +69,7 @@ import qrcode
 from io import BytesIO
 
 # Replace this URL with your deployed Streamlit app URL
-app_url = "https://your-app-name.streamlit.app"
+app_url = "https://medsanalyz.streamlit.app/"
 qr = qrcode.QRCode(box_size=5, border=2)
 qr.add_data(app_url)
 qr.make(fit=True)
@@ -79,3 +79,4 @@ img_qr.save(buf)
 
 st.subheader("Scan this QR code with your phone to open the app")
 st.image(buf)
+
